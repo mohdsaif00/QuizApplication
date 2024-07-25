@@ -1,0 +1,196 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf7f7;
+  }
+  
+  .container {
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    background-color: #fff;
+  }
+  
+  .page {
+    
+    width: 60%; /* Adjust the width as needed */
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 20px 10px 10px #8f8d8d1a;
+    position: relative ;
+    top: 30px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* User Details Section */
+  .user-details {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  
+  .user-details img {
+    width: 150px;
+    height: 150px;
+     /* border-radius: 50%;  */
+  }
+  
+  .user-details h2 {
+    margin-top: 10px;
+  }
+  
+  .user-details input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .user-details button {
+    padding: 15px 25px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .user-details button:hover {
+    background-color: #317d35;
+  }
+  
+  /* Category Section */
+  .category-section {
+    text-align: center;
+    height: 200px;
+    padding-top: 30px;
+  }
+  .selection {
+        color: #d7dadc;
+        text-shadow: 2px 2px 5px rgb(6, 6, 6);
+  }
+  .category-section button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #aadcf0;
+    color: #0d0d0d;
+    border: 2px solid #48c6f8;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-grid;
+   
+    
+  }
+  
+  .category-section button:hover {
+    background-color: #48c6f8;
+    transform: scale(1.2);
+    
+  }
+  
+  /* Quiz Page */
+  #quizHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  #questionContainer {
+    margin-bottom: 20px;
+  }
+  
+  #questionContainer p {
+    margin-bottom: 10px;
+  }
+  
+  #questionContainer button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #48c6f8;
+    border: 2px solid #48c6f8;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #questionContainer button:hover {
+    background-color: #48c6f8;
+    color: #fff;
+  }
+  
+  .quiz-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .quiz-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #aadcf0;
+    color: #151313;
+    border: 1px solid #48c6f8;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .quiz-buttons button:hover {
+    background-color: #48c6f8;
+  }
+  /* Result Page */
+  #rslt {
+    text-align: center;
+    background-color: #19B9C5;
+    color: #fff;
+    box-shadow: 20px 10px 10px #03929c;
+  }
+  
+  #resultPage {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #resultPage p {
+    margin: 5px;
+    font-size: 16px;
+    
+  }
+  
+  #resultPage span {
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .container {
+      max-width: 90%;
+    }
+  
+    .page {
+      padding: 10px;
+    }
+  
+    .user-details input[type="text"] {
+      width: calc(100% - 20px);
+    }
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="/quiz.css">
+</head>
+<body>
+  <!-- Home Page -->
+  <div id="homePage" class="page">
+    <div class="user-details">
+      <img src="/image/unnamed-removebg-preview.png" alt="Logo">
+      <h1>Welcome to the Testbook!</h1>
+      <input type="text" id="userName" placeholder="Enter your name">
+      <button onclick="startQuiz()">Enter</button>
+    </div>
+    <hr>
+
+    <div class="category-section">
+      <h1 class="selection">select Category</h1>
+      <button onclick="selectCategory('pipes')">Pipes and Cisterns</button>
+      <button onclick="selectCategory('probability')">Probability</button>
+      <button onclick="selectCategory('age')">Problems on Age</button>
+      <button onclick="selectCategory('profit')">Profit and Loss</button>
+    </div>
+  </div>
+
+  <!-- Quiz Page -->
+  <div id="quizPage" class="page">
+    <div id="quizHeader">
+      <span id="timer">Timer:100 seconds</span>
+      <span id="score">Score: 0</span>
+    </div>
+    <div id="questionContainer">
+      <!-- Questions will be dynamically loaded here -->
+    </div>
+    <div class="quiz-buttons">
+    <button id="prevQuestionBtn" onclick="prevQuestion()">Previous Question</button>
+    <button id="nextQuestionBtn" onclick="nextQuestion()">Next Question</button>
+  </div>
+  </div>
+
+  <!-- Result Page -->
+  <div id="resultPage" class="page">
+    <h2 id="rslt">Quiz Result</h2>
+    <h3><i>nice try!keep practicing,keep growing</i></h3>
+    <p>Name: <span id="resultName"></span></p>
+    <p>Total Time Taken: <span id="totalTime"></span></p>
+    <p>Total Questions: <span id="totalQuestions"></span></p>
+    <p>Attempted: <span id="attemptedQuestions"></span></p>
+    <p>Correct Answers: <span id="correctAnswers"></span></p>
+    <p>Wrong Answers: <span id="wrongAnswers"></span></p>
+    <p>Score: <span id="scorePercentage"></span>%</p>
+    <div class="quiz-buttons">
+    <button onclick="restartQuiz()">Start Again</button>
+    <button onclick="goToHome()">Go to Home</button>
+    </div>
+  </div>
+
+  <script src="/quiz.js"></script>
+</body>
+</html>
